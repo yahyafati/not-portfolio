@@ -50,7 +50,6 @@ const Home = () => {
     return (
         <HomeSection>
             <BGCircles src={img} />
-
             <HomeTextDiv>
                 <NameTitle>
                     <NameTitleHi>Hi,</NameTitleHi> I'm Yahya
@@ -58,8 +57,6 @@ const Home = () => {
                 <JobTitle>Mobile and Web Developer</JobTitle>
                 <JobDescription>I design and develop beautiful and functional web and mobile apps.</JobDescription>
             </HomeTextDiv>
-            
-            
         </HomeSection>
     )
 }
