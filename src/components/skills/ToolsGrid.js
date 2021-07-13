@@ -5,6 +5,7 @@ import mongodbIcon from "@iconify-icons/logos/mongodb";
 import gitIcon from "@iconify-icons/logos/git";
 import springIcon from "@iconify-icons/logos/spring";
 import mysqlIcon from "@iconify-icons/logos/mysql";
+import firebaseIcon from "@iconify-icons/logos/firebase";
 
 import styled from "styled-components";
 import ToolItem from "./ToolItem";
@@ -23,6 +24,7 @@ const ToolsGrid = () => {
         gitIcon,
         springIcon,
         mysqlIcon,
+        firebaseIcon,
     ];
 
     return (

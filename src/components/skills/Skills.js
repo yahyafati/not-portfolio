@@ -16,14 +16,14 @@ const SkillsTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     font-size: 36px;
-    width: 100%;
-    text-align: center;
+    width: fit-content;
     margin: 30px auto 40px auto;
 `;
 
 const MySkills = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 `;
 
