@@ -1,9 +1,26 @@
-import { InlineIcon } from "@iconify/react";
+import Icon, { InlineIcon } from "@iconify/react";
 import githubIcon from "@iconify-icons/logos/github-icon";
+import javaIcon from "@iconify-icons/logos/java";
+import javascriptIcon from "@iconify-icons/logos/javascript";
+import cPlusplus from "@iconify-icons/logos/c-plusplus";
+import cIcon from "@iconify-icons/logos/c";
+import cSharp from "@iconify-icons/logos/c-sharp";
+import kotlinIcon from "@iconify-icons/logos/kotlin";
+import pythonIcon from "@iconify-icons/logos/python";
+import reactIcon from "@iconify-icons/logos/react";
+import springIcon from "@iconify-icons/logos/spring";
+import mysqlIcon from "@iconify-icons/logos/mysql";
+import mongodbIcon from "@iconify-icons/logos/mongodb";
+import nextjsIcon from "@iconify-icons/logos/nextjs";
+import nodejsIcon from "@iconify-icons/logos/nodejs";
+import firebaseIcon from "@iconify-icons/logos/firebase";
 
 import styled from "styled-components";
 
 let ProjectStyled = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
     margin: 5px;
     color: white;
@@ -19,6 +36,7 @@ const ProjectTitle = styled.h3`
 
 const ProjectDescription = styled.p`
     font-size: 14px;
+    height: 100%;
 `;
 
 const ProjectTagsContainer = styled.div`
@@ -39,6 +57,28 @@ const ProjectTag = styled.a`
 const GithubLink = styled.a`
     margin-left: 15px;
 `;
+
+const LanguageIcon = styled(Icon)`
+    margin-left: 8px;
+`;
+
+const iconsMap = {
+    java: javaIcon,
+    javascript: javascriptIcon,
+    cpp: cPlusplus,
+    c: cIcon,
+    cSharp: cSharp,
+    kotlin: kotlinIcon,
+    python: pythonIcon,
+    react: reactIcon,
+    spring: springIcon,
+    mysql: mysqlIcon,
+    mongodb: mongodbIcon,
+    nextjs: nextjsIcon,
+    nodejs: nodejsIcon,
+    firebase: firebaseIcon,
+};
+
 const Project = ({ project, index }) => {
     return (
         <ProjectStyled>
@@ -57,7 +97,13 @@ const Project = ({ project, index }) => {
                 </div>
                 <div>
                     {project.langs.map((lang) => (
-                        <ProjectTag href="#">{lang}</ProjectTag>
+                        <a href="#">
+                            <LanguageIcon
+                                icon={iconsMap[lang.toLowerCase()]}
+                                height={18}
+                            />
+                        </a>
+                        // <ProjectTag href="#">{lang}</ProjectTag>
                     ))}
                 </div>
             </ProjectTagsContainer>
