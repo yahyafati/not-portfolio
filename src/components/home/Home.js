@@ -69,13 +69,13 @@ const SideButton = styled.a`
     transition: all 1s;
 
     &:hover {
-        transform: scale(1.05) translateX(-10px);
+        transform: scale(1.05) translateX(-5px);
     }
 `;
 
 const Home = () => {
     return (
-        <HomeSection>
+        <HomeSection className="section">
             <BGCircles src={img} />
             <HomeTextContainer>
                 <NameTitle>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Project from "./Project";
 
-const ProjectsStyled = styled.div`
+const ProjectsStyled = styled.section`
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ const MoreButton = styled.a`
     width: fit-content;
     margin: 10px auto;
     color: #d11435;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border: 1px solid #d11435;
     border-radius: 5px;
     transition: all 0.5s;
@@ -36,6 +36,7 @@ const MoreButton = styled.a`
         background-color: #d11435;
         border-color: white;
         color: white;
+        padding: 5px 30px;
     }
 `;
 
@@ -72,7 +73,7 @@ const Projects = () => {
     ];
 
     return (
-        <ProjectsStyled>
+        <ProjectsStyled className="section">
             <ProjectsTitle>
                 If you wish to check out some of my previous works
             </ProjectsTitle>

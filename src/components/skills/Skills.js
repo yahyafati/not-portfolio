@@ -9,6 +9,8 @@ const SkillsSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 100vh;
+    background-color: #f70a33;
+    color: white;
     /* border: 1px solid; */
 `;
 
@@ -29,7 +31,7 @@ const MySkills = styled.div`
 
 const Skills = () => {
     return (
-        <SkillsSection>
+        <SkillsSection className="section">
             <SkillsTitle>Here are some of the things I'm good at</SkillsTitle>
             <MySkills>
                 <ProgrammingLanguagesList />

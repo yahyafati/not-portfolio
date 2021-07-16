@@ -1,4 +1,4 @@
-import Icon, { InlineIcon } from "@iconify/react";
+import { Icon, InlineIcon } from "@iconify/react";
 import githubIcon from "@iconify-icons/logos/github-icon";
 import javaIcon from "@iconify-icons/logos/java";
 import javascriptIcon from "@iconify-icons/logos/javascript";
@@ -23,9 +23,18 @@ let ProjectStyled = styled.div`
     justify-content: space-between;
     padding: 15px;
     margin: 5px;
-    color: white;
-    background-color: #d11435;
-    border-radius: 5px;
+    /* color: white;
+    background-color: #d11435; */
+    border-radius: 10px;
+    border: 2px solid wheat;
+    box-shadow: 5px -5px 10px 5px wheat;
+
+    transition: all 0.5s;
+
+    &:hover {
+        border: 2px solid #d11435;
+        box-shadow: 5px -5px 10px 5px #fdfdfd;
+    }
 `;
 
 const ProjectTitle = styled.h3`
@@ -47,8 +56,8 @@ const ProjectTagsContainer = styled.div`
 
 const ProjectTag = styled.a`
     font-size: 12px;
-    background: white;
-    color: #d11435;
+    color: white;
+    background: #d11435;
     padding: 5px 10px;
     border-radius: 3px;
     margin-left: 5px;
@@ -92,12 +101,12 @@ const Project = ({ project, index }) => {
             <ProjectTagsContainer>
                 <div>
                     {project.tags.map((tag) => (
-                        <ProjectTag href="#">{tag}</ProjectTag>
+                        <ProjectTag href="/#">{tag}</ProjectTag>
                     ))}
                 </div>
                 <div>
                     {project.langs.map((lang) => (
-                        <a href="#">
+                        <a href="/#">
                             <LanguageIcon
                                 icon={iconsMap[lang.toLowerCase()]}
                                 height={18}

@@ -2,11 +2,14 @@ import styled from "styled-components";
 import TestimonialItem from "./TestimonialItem";
 import Slider from "infinite-react-carousel";
 
-const TestimonialsStyled = styled.div`
+const TestimonialsStyled = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+
+    background-color: #f70a33;
+    color: white;
 `;
 
 const TestimonialsTitle = styled.h2`
@@ -54,8 +57,10 @@ const Testimonials = () => {
     ];
 
     return (
-        <TestimonialsStyled>
-            <TestimonialsTitle>Here are some good words from my past customers</TestimonialsTitle>
+        <TestimonialsStyled className="section">
+            <TestimonialsTitle>
+                Here are some good words from my past customers
+            </TestimonialsTitle>
             <SliderContainerStyled>
                 <SliderStyled dots autoplay={true}>
                     {testimonials.map((testimonial, index) => (

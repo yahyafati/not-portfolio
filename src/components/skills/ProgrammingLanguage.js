@@ -6,6 +6,7 @@ const ProgrammingLanguageDiv = styled.div`
     display: flex;
     margin: 8px;
     gap: 16px;
+    overflow-y: hidden;
 `;
 
 const ProgrammingLanguage = ({ language, index }) => {

@@ -7,17 +7,24 @@ const TestimonialItemStyled = styled.div`
     border-radius: 10px;
     width: 600px;
     margin: auto;
+
+    color: #d11435;
+    background-color: whitesmoke;
 `;
 
 const CommentStyled = styled.p`
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 `;
 
 const CommenterStyled = styled.div`
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    font-weight: bold;
+    color: #444;
 `;
 
 const TestimonialItem = ({ name, relation, comment, index }) => {

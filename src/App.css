@@ -3,13 +3,17 @@ html {
 }
 
 .carousel-dots li.carousel-dots-active button:before {
-    color: #d11435 !important;
+    color: white !important;
 }
 
 .carousel-dots li button:before {
     content: "" !important;
     width: 20px !important;
     height: 20px !important;
-    background-color: #d11435 !important;
+    background-color: white !important;
     border-radius: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

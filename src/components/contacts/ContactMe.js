@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ContactForm from "./ContactForm";
 import SocialMediaButtons from "./SocialMediaButtons";
 
-const ContactMeStyled = styled.div`
+const ContactMeStyled = styled.section`
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ const ContactMeSubtitle = styled.h4`
 
 const ContactMe = () => {
     return (
-        <ContactMeStyled>
+        <ContactMeStyled className="section">
             <ContactMeTitle>Let's have a talk</ContactMeTitle>
             <ContactMeSubtitle>
                 If you have any business inquiries or any feedback related to

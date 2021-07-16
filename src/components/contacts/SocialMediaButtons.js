@@ -17,7 +17,7 @@ const SocialButton = styled(InlineIcon)`
 `;
 
 const SocialMediaButtonsStyled = styled.div`
-    margin: 10px auto;
+    margin: 30px auto;
     width: fit-content;
 `;
 
