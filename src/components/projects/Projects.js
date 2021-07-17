@@ -12,6 +12,18 @@ const ProjectsList = styled.div`
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(480px, 600px));
+
+    animation: ProjectsListAnim 2s;
+
+    @keyframes ProjectsListAnim {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
 `;
 
 const ProjectsTitle = styled.h2`
@@ -20,6 +32,18 @@ const ProjectsTitle = styled.h2`
     font-size: 36px;
     width: fit-content;
     margin: 30px auto;
+
+    animation: ProjectsTitleAnim 2s linear;
+
+    @keyframes ProjectsTitleAnim {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 `;
 
 const MoreButton = styled.a`
@@ -31,6 +55,18 @@ const MoreButton = styled.a`
     border: 1px solid #d11435;
     border-radius: 5px;
     transition: all 0.5s;
+
+    animation: MoreButtonAnim 2s linear;
+
+    @keyframes MoreButtonAnim {
+        0% {
+            transform: translateY(50px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 
     &:hover {
         background-color: #d11435;
@@ -73,7 +109,7 @@ const Projects = () => {
     ];
 
     return (
-        <ProjectsStyled className="section">
+        <ProjectsStyled id="projects" className="section">
             <ProjectsTitle>
                 If you wish to check out some of my previous works
             </ProjectsTitle>

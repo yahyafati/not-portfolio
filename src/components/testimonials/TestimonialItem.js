@@ -8,12 +8,13 @@ const TestimonialItemStyled = styled.div`
     width: 600px;
     margin: auto;
 
-    color: #d11435;
+    color: #c11435;
+    /* color: #333; */
     background-color: whitesmoke;
 `;
 
 const CommentStyled = styled.p`
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 `;
 

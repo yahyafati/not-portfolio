@@ -15,6 +15,18 @@ const ContactMeTitle = styled.h2`
     font-size: 36px;
     width: fit-content;
     margin: 0 auto;
+
+    animation: ContactMeTitleAnim 3s linear;
+
+    @keyframes ContactMeTitleAnim {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
 `;
 
 const ContactMeSubtitle = styled.h4`
@@ -23,11 +35,23 @@ const ContactMeSubtitle = styled.h4`
     font-size: 18px;
     width: fit-content;
     margin: 8px auto 18px auto;
+
+    animation: ContactMeSubtitleAnim 3s linear;
+
+    @keyframes ContactMeSubtitleAnim {
+        0% {
+            transform: translateX(200px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
 `;
 
 const ContactMe = () => {
     return (
-        <ContactMeStyled className="section">
+        <ContactMeStyled id="contact" className="section">
             <ContactMeTitle>Let's have a talk</ContactMeTitle>
             <ContactMeSubtitle>
                 If you have any business inquiries or any feedback related to

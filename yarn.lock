@@ -9198,6 +9198,13 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-page-scroller@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-page-scroller/-/react-page-scroller-2.2.1.tgz#9a7484d4019e786b286d681625d2ad2c6301207d"
+  integrity sha512-7Mh0sbwwbfh1+ax+kR8tXcZMzrRG3phrN67Q3sjVZ/9M1sOoqSr3TeYqYHF2XzqXhZ/Dftpf6M32xpecbfVfKg==
+  dependencies:
+    babel-polyfill "^6.26.0"
+
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"

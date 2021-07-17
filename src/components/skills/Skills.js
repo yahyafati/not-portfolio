@@ -20,6 +20,18 @@ const SkillsTitle = styled.h2`
     font-size: 36px;
     width: fit-content;
     margin: 30px auto 40px auto;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: SkillsTitleAnim 1s linear;
+    @keyframes SkillsTitleAnim {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 `;
 
 const MySkills = styled.div`
@@ -31,7 +43,7 @@ const MySkills = styled.div`
 
 const Skills = () => {
     return (
-        <SkillsSection className="section">
+        <SkillsSection id="skills" className="section">
             <SkillsTitle>Here are some of the things I'm good at</SkillsTitle>
             <MySkills>
                 <ProgrammingLanguagesList />

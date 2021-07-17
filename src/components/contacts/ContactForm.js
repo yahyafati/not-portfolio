@@ -6,6 +6,26 @@ const ContactMeForm = styled.form`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
+
+    animation: ContactMeFormAnim 3s linear;
+
+    @keyframes ContactMeFormAnim {
+        0% {
+            transform: scale(1.1);
+        }
+
+        50% {
+            transform: scale(0.95);
+        }
+
+        75% {
+            transform: scale(1.05);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
 `;
 
 const TextInputStyled = styled.input`

@@ -18,12 +18,36 @@ const TestimonialsTitle = styled.h2`
     font-size: 36px;
     width: fit-content;
     margin: 30px auto 30px auto;
+
+    animation: TestimonialsTitleAnim 1.5s linear;
+
+    @keyframes TestimonialsTitleAnim {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 `;
 
 const SliderContainerStyled = styled.div`
     margin: 0px auto;
     width: 80%;
     padding: 10px;
+
+    animation: SliderContainerAnim 1.5s linear;
+
+    @keyframes SliderContainerAnim {
+        0% {
+            transform: translateY(100px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 `;
 
 const SliderStyled = styled(Slider)``;
@@ -57,7 +81,7 @@ const Testimonials = () => {
     ];
 
     return (
-        <TestimonialsStyled className="section">
+        <TestimonialsStyled id="testimonials" className="section">
             <TestimonialsTitle>
                 Here are some good words from my past customers
             </TestimonialsTitle>

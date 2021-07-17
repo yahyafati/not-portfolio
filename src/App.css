@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit;
+}
 .carousel-dots li.carousel-dots-active button:before {
     color: white !important;
 }

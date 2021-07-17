@@ -24,11 +24,32 @@ const SocialMediaButtonsStyled = styled.div`
 const SocialMediaButtons = () => {
     return (
         <SocialMediaButtonsStyled>
-            {icons.map((icon) => (
-                <a href={icon.url} target="_blank" rel="noreferrer">
-                    <SocialButton icon={icon.icon} width={32} height={32} />
-                </a>
-            ))}
+            {icons.map((icon, index) => {
+                const ButtonAnimStyle = styled(SocialButton)`
+                    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+                    animation: ${"SocialMediaButton" + index} 1s linear
+                        ${index / 2 + "s"};
+
+                    @keyframes ${"SocialMediaButton" + index} {
+                        50% {
+                            transform: scale(1.25);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+                `;
+                return (
+                    <a href={icon.url} target="_blank" rel="noreferrer">
+                        <ButtonAnimStyle
+                            icon={icon.icon}
+                            width={32}
+                            height={32}
+                        />
+                    </a>
+                );
+            })}
         </SocialMediaButtonsStyled>
     );
 };

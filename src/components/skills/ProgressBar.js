@@ -5,6 +5,7 @@ const Bar = styled.div`
     height: 32px;
     border: 1px solid #f28195;
     border-radius: 5px;
+    overflow: hidden;
 `;
 
 // const bgColors = [
@@ -33,6 +34,19 @@ const ProgressBar = ({ value, index }) => {
         /* background-color: #${bgColors[index]}; */
         background-color: white;
         border-radius: 5px;
+
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: ProgressAnim 1s linear;
+        animation-fill-mode: forwards;
+        @keyframes ProgressAnim {
+            0% {
+                transform: scaleX(0) translateX(-100%);
+            }
+
+            100% {
+                transform: scaleX(1) translateX(0%);
+            }
+        }
     `;
     return (
         <Bar>
