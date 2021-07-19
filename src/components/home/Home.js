@@ -61,7 +61,7 @@ const NameTitle = styled.h1`
         }
 
         75% {
-            transform: translateY(-25px);
+            transform: translateY(-5px);
         }
 
         100% {

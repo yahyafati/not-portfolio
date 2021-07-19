@@ -5,11 +5,10 @@ const NavigationPanelStyled = styled.div`
     z-index: 200;
     position: fixed;
     top: 50%;
-    right: 0;
-    color: purple;
+    right: 20px;
     transform: translate3d(0, -50%, 0);
+    text-align: right;
 `;
-
 const ListStyled = styled.ul`
     list-style-type: none;
 `;
