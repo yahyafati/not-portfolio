@@ -30,6 +30,7 @@ let ProjectStyled = styled.div`
     box-shadow: 5px -5px 10px 5px wheat;
 
     transition: all 0.5s;
+    background: #ffffffcc;
 
     &:hover {
         border: 2px solid #d11435;

@@ -10,7 +10,7 @@ const TestimonialItemStyled = styled.div`
 
     color: #c11435;
     /* color: #333; */
-    background-color: whitesmoke;
+    background-color: #ffffffcc;
 `;
 
 const CommentStyled = styled.p`

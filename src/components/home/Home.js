@@ -6,6 +6,7 @@ const HomeSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
 `;
 
 const BGCircles = styled.img`
@@ -181,7 +182,7 @@ const SideButton = styled.a`
 const Home = () => {
     return (
         <HomeSection id="home" className="section">
-            <BGCircles src={img} />
+            {/* <BGCircles src={img} /> */}
             <HomeTextContainer>
                 <NameTitle>
                     <NameTitleHi>Hi</NameTitleHi>, I'm Yahya

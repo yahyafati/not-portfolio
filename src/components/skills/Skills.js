@@ -9,7 +9,7 @@ const SkillsSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #f70a33;
+    background-color: #f70a33cc;
     color: white;
     /* border: 1px solid; */
 `;

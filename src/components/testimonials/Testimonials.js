@@ -8,7 +8,7 @@ const TestimonialsStyled = styled.section`
     justify-content: center;
     height: 100vh;
 
-    background-color: #f70a33;
+    background-color: #f70a33cc;
     color: white;
 `;
 
