@@ -23,6 +23,7 @@ let ProjectStyled = styled.div`
     justify-content: space-between;
     padding: 15px;
     margin: 5px;
+    gap: 0.5em;
     /* color: white;
     background-color: #d11435; */
     border-radius: 10px;
@@ -40,12 +41,12 @@ let ProjectStyled = styled.div`
 
 const ProjectTitle = styled.h3`
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     font-weight: 400;
 `;
 
 const ProjectDescription = styled.p`
-    font-size: 14px;
+    font-size: 0.8rem;
     height: 100%;
 `;
 
@@ -56,7 +57,7 @@ const ProjectTagsContainer = styled.div`
 `;
 
 const ProjectTag = styled.a`
-    font-size: 12px;
+    font-size: 0.75rem;
     color: white;
     background: #d11435;
     padding: 5px 10px;

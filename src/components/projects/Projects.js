@@ -29,7 +29,7 @@ const ProjectsList = styled.div`
 const ProjectsTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.5rem;
     width: fit-content;
     margin: 30px auto;
 

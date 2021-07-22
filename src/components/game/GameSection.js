@@ -11,8 +11,8 @@ const GameSectionStyled = styled.section`
 
 const ComingSoonText = styled.h2`
     font-family: "Montserrat Alternates", "Montserrat", sans-serif;
-    font-size: 64px;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: normal;
 `;
 
 const GameSection = () => {

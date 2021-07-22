@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img from "../../circles.svg";
+
 const HomeSection = styled.section`
     height: 100vh;
     width: 100%;
@@ -47,7 +48,7 @@ const HomeTextContainer = styled.div`
 
 const NameTitle = styled.h1`
     font-family: "Cookie", cursive;
-    font-size: 120px;
+    font-size: 8rem;
 
     animation-name: NameTitleAnim;
     animation-duration: 3s;
@@ -102,7 +103,7 @@ const NameTitleHi = styled.span`
 
 const JobTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 72px;
+    font-size: 4rem;
     font-weight: 300;
     animation-name: JobTitleAnim;
     animation-duration: 3s;
@@ -122,7 +123,7 @@ const JobDescription = styled.h4`
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: #525252;
-    font-size: 36px;
+    font-size: 2rem;
 
     /* animation: name duration timing-function delay iteration-count direction
         fill-mode; */
@@ -154,7 +155,7 @@ const SideButton = styled.a`
     text-align: right;
     color: white;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.5rem;
     width: 120px;
     padding: 5px;
 

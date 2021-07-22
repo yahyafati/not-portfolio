@@ -9,7 +9,7 @@ const SkillsSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #f70a33cc;
+    background-color: #f70a33de;
     color: white;
     /* border: 1px solid; */
 `;
@@ -17,7 +17,7 @@ const SkillsSection = styled.section`
 const SkillsTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.5rem;
     width: fit-content;
     margin: 30px auto 40px auto;
 

@@ -10,11 +10,11 @@ const TestimonialItemStyled = styled.div`
 
     color: #c11435;
     /* color: #333; */
-    background-color: #ffffffcc;
+    background-color: #ffffff;
 `;
 
 const CommentStyled = styled.p`
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 500;
 `;
 
@@ -24,7 +24,7 @@ const CommenterStyled = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    font-weight: bold;
+    font-weight: 500;
     color: #444;
 `;
 

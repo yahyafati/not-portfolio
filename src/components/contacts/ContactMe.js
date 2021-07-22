@@ -12,7 +12,7 @@ const ContactMeStyled = styled.section`
 const ContactMeTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.5rem;
     width: fit-content;
     margin: 0 auto;
 
@@ -32,7 +32,7 @@ const ContactMeTitle = styled.h2`
 const ContactMeSubtitle = styled.h4`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2rem;
     width: fit-content;
     margin: 8px auto 18px auto;
 

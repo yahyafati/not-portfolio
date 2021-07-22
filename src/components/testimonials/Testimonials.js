@@ -15,7 +15,7 @@ const TestimonialsStyled = styled.section`
 const TestimonialsTitle = styled.h2`
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.5rem;
     width: fit-content;
     margin: 30px auto 30px auto;
 
@@ -33,7 +33,7 @@ const TestimonialsTitle = styled.h2`
 `;
 
 const SliderContainerStyled = styled.div`
-    margin: 0px auto;
+    margin: 0 auto;
     width: 80%;
     padding: 10px;
 
