@@ -1,0 +1,14 @@
+.gameSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: white;
+
+  .comingSoon {
+    font-family: "Montserrat Alternates", "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+  }
+}

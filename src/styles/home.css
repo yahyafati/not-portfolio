@@ -1,0 +1,128 @@
+.homeSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.homeSection .homeTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  color: #d11435;
+  padding: 10px;
+  border-radius: 5px;
+}
+.homeSection .homeTextContainer .nameTitle {
+  font-family: "Cookie", cursive;
+  font-size: 8rem;
+  animation-name: NameTitleAnim;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+@keyframes NameTitleAnim {
+  0% {
+    transform: translateY(-200px);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.homeSection .homeTextContainer .nameTitle .nameTitleHi {
+  display: inline-block;
+  color: teal;
+}
+@keyframes hiAnimation {
+  0% {
+    color: #525252;
+    transform: scale(1);
+  }
+  25% {
+    color: #d11435;
+  }
+  50% {
+    color: #525252;
+    transform: scale(1.5);
+  }
+  75% {
+    color: #d11435;
+  }
+  100% {
+    color: #525252;
+    transform: scale(1);
+  }
+}
+.homeSection .homeTextContainer .jobTitle {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  animation-name: JobTitleAnim;
+  animation-duration: 3s;
+}
+@keyframes JobTitleAnim {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.homeSection .homeTextContainer .jobDescription {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #525252;
+  font-size: 2rem;
+  /* animation: name duration timing-function delay iteration-count direction
+      fill-mode; */
+  animation: JobDescriptionAnim 3s;
+}
+@keyframes JobDescriptionAnim {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.homeSection .sideButtonContainer {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  color: white;
+}
+.homeSection .sideButtonContainer .sideButton {
+  display: block;
+  background: #d11435 url("../SideButtonLeaf.svg");
+  background-size: 100% 100%;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 120px;
+  padding: 5px;
+  transition: all 1s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: SideButtonAnim 1s linear;
+  animation-fill-mode: forwards;
+}
+.homeSection .sideButtonContainer .sideButton:hover {
+  transform: scale(1.05) translateX(-5px);
+}
+@keyframes SideButtonAnim {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

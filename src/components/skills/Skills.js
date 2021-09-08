@@ -1,55 +1,17 @@
-import styled from "styled-components";
 import ProgrammingLanguagesList from "./ProgrammingLanguagesList";
 import ToolsGrid from "./ToolsGrid";
+import "../../styles/skills.css"
 
-const SkillsSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f70a33de;
-    color: white;
-    /* border: 1px solid; */
-`;
-
-const SkillsTitle = styled.h2`
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    width: fit-content;
-    margin: 30px auto 40px auto;
-
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: SkillsTitleAnim 1s linear;
-    @keyframes SkillsTitleAnim {
-        0% {
-            transform: translateY(-100px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-`;
-
-const MySkills = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-`;
 
 const Skills = () => {
     return (
-        <SkillsSection id="skills" className="section">
-            <SkillsTitle>Here are some of the things I'm good at</SkillsTitle>
-            <MySkills>
+        <div id="skills" className="section skillsSection">
+            <h2 className={"skillsTitle"}>Here are some of the things I'm good at</h2>
+            <div className={"mySkills"}>
                 <ProgrammingLanguagesList />
                 <ToolsGrid />
-            </MySkills>
-        </SkillsSection>
+            </div>
+        </div>
     );
 };
 

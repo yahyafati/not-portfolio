@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import linkedinIcon from "@iconify-icons/logos/linkedin-icon";
 import twitterIcon from "@iconify-icons/logos/twitter";
 import githubIcon from "@iconify-icons/logos/github-icon";
@@ -12,37 +11,20 @@ const icons = [
     { icon: instagramIcon, name: "Instagram", url: "https://instagram.com" },
 ];
 
-const SocialButton = styled(InlineIcon)`
-    margin: 5px;
-`;
-
-const SocialMediaButtonsStyled = styled.div`
-    margin: 30px auto;
-    width: fit-content;
-`;
 
 const SocialMediaButtons = () => {
     return (
-        <SocialMediaButtonsStyled>
+        <div className={"socials"}>
             {icons.map((icon, index) => {
-                const ButtonAnimStyle = styled(SocialButton)`
-                    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-                    animation: ${"SocialMediaButton" + index} 1s linear
-                        ${index / 2 + "s"};
-
-                    @keyframes ${"SocialMediaButton" + index} {
-                        50% {
-                            transform: scale(1.25);
-                        }
-
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                `;
                 return (
-                    <a href={icon.url} target="_blank" rel="noreferrer">
-                        <ButtonAnimStyle
+                    <a href={icon.url}
+                       target="_blank"
+                       rel="noreferrer"
+                       style={{animationDelay: `${index/2}s`}}
+                       className={"socialButton"}
+                    >
+                        <InlineIcon
+
                             icon={icon.icon}
                             width={32}
                             height={32}
@@ -50,7 +32,7 @@ const SocialMediaButtons = () => {
                     </a>
                 );
             })}
-        </SocialMediaButtonsStyled>
+        </div>
     );
 };
 

@@ -1,27 +1,12 @@
-import styled from "styled-components";
-
-const GameSectionStyled = styled.section`
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
-    color: white;
-`;
-
-const ComingSoonText = styled.h2`
-    font-family: "Montserrat Alternates", "Montserrat", sans-serif;
-    font-size: 4rem;
-    font-weight: normal;
-`;
+import "../../styles/game/game.css"
 
 const GameSection = () => {
     return (
-        <GameSectionStyled id="game" className="section">
-            <ComingSoonText>
+        <div id="game" className="section gameSection">
+            <h2 className={"comingSoon"}>
                 Space Invaders Game to be added here...
-            </ComingSoonText>
-        </GameSectionStyled>
+            </h2>
+        </div>
     );
 };
 

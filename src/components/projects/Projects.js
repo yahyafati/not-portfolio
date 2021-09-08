@@ -1,83 +1,8 @@
-import styled from "styled-components";
 import Project from "./Project";
 
-const ProjectsStyled = styled.section`
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`;
+import "../../styles/projects.css"
 
-const ProjectsList = styled.div`
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 600px));
-
-    animation: ProjectsListAnim 2s;
-
-    @keyframes ProjectsListAnim {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
-`;
-
-const ProjectsTitle = styled.h2`
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    width: fit-content;
-    margin: 30px auto;
-
-    animation: ProjectsTitleAnim 2s linear;
-
-    @keyframes ProjectsTitleAnim {
-        0% {
-            transform: translateY(-100px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-`;
-
-const MoreButton = styled.a`
-    display: block;
-    width: fit-content;
-    margin: 10px auto;
-    color: #d11435;
-    padding: 5px 15px;
-    border: 1px solid #d11435;
-    border-radius: 5px;
-    transition: all 0.5s;
-
-    animation: MoreButtonAnim 2s linear;
-
-    @keyframes MoreButtonAnim {
-        0% {
-            transform: translateY(50px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    &:hover {
-        background-color: #d11435;
-        border-color: white;
-        color: white;
-        padding: 5px 30px;
-    }
-`;
-
-const Projects = () => {
-    const projects = [
+const projects = [
         {
             name: "Helio IMS",
             description:
@@ -108,18 +33,20 @@ const Projects = () => {
         },
     ];
 
+const Projects = () => {
+
     return (
-        <ProjectsStyled id="projects" className="section">
-            <ProjectsTitle>
+        <div id="projects" className="section projectsSection">
+            <h2 className={"projectsTitle"}>
                 If you wish to check out some of my previous works
-            </ProjectsTitle>
-            <ProjectsList>
+            </h2>
+            <div className={"projectsList"}>
                 {projects.map((project, index) => (
                     <Project project={project} index={index} />
                 ))}
-            </ProjectsList>
-            <MoreButton href="#">Show More</MoreButton>
-        </ProjectsStyled>
+            </div>
+            <a href="/#" className={"moreButton"}>Show More</a>
+        </div>
     );
 };
 

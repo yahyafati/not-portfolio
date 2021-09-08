@@ -1,0 +1,115 @@
+.projectsSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectsSection .projectsTitle {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  width: fit-content;
+  margin: 30px auto;
+  animation: ProjectsTitleAnim 2s linear;
+}
+@keyframes ProjectsTitleAnim {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.projectsSection .projectsList {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 600px));
+  animation: ProjectsListAnim 2s;
+}
+@keyframes ProjectsListAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.projectsSection .projectsList .projectItem {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 5px;
+  gap: 0.5em;
+  /* color: white;
+  background-color: #d11435; */
+  border-radius: 10px;
+  border: 2px solid wheat;
+  box-shadow: 5px -5px 10px 5px wheat;
+  transition: all 0.5s;
+  background: #ffffffcc;
+}
+.projectsSection .projectsList .projectItem:hover {
+  border: 2px solid #d11435;
+  box-shadow: 5px -5px 10px 5px #fdfdfd;
+}
+.projectsSection .projectsList .projectItem .projectName {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.projectsSection .projectsList .projectItem .projectName .githubLink {
+  margin-left: 15px;
+}
+.projectsSection .projectsList .projectItem .projectDescription {
+  font-size: 0.8rem;
+  height: 100%;
+}
+.projectsSection .projectsList .projectItem .tagsContainer {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.projectsSection .projectsList .projectItem .tagsContainer .tags {
+  display: flex;
+  gap: 5px;
+}
+.projectsSection .projectsList .projectItem .tagsContainer .tags .tag {
+  font-size: 0.75rem;
+  color: white;
+  background: #d11435;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.projectsSection .projectsList .projectItem .tagsContainer .languages {
+  display: flex;
+  gap: 5px;
+}
+.projectsSection .moreButton {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  color: #d11435;
+  padding: 5px 15px;
+  border: 1px solid #d11435;
+  border-radius: 5px;
+  transition: all 0.5s;
+  animation: MoreButtonAnim 2s linear;
+}
+@keyframes MoreButtonAnim {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.projectsSection .moreButton:hover {
+  background-color: #d11435;
+  border-color: white;
+  color: white;
+  padding: 5px 30px;
+}
+
+/*# sourceMappingURL=projects.css.map */

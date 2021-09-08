@@ -15,64 +15,6 @@ import nextjsIcon from "@iconify-icons/logos/nextjs";
 import nodejsIcon from "@iconify-icons/logos/nodejs";
 import firebaseIcon from "@iconify-icons/logos/firebase";
 
-import styled from "styled-components";
-
-let ProjectStyled = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    margin: 5px;
-    gap: 0.5em;
-    /* color: white;
-    background-color: #d11435; */
-    border-radius: 10px;
-    border: 2px solid wheat;
-    box-shadow: 5px -5px 10px 5px wheat;
-
-    transition: all 0.5s;
-    background: #ffffffcc;
-
-    &:hover {
-        border: 2px solid #d11435;
-        box-shadow: 5px -5px 10px 5px #fdfdfd;
-    }
-`;
-
-const ProjectTitle = styled.h3`
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-`;
-
-const ProjectDescription = styled.p`
-    font-size: 0.8rem;
-    height: 100%;
-`;
-
-const ProjectTagsContainer = styled.div`
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-`;
-
-const ProjectTag = styled.a`
-    font-size: 0.75rem;
-    color: white;
-    background: #d11435;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-left: 5px;
-`;
-
-const GithubLink = styled.a`
-    margin-left: 15px;
-`;
-
-const LanguageIcon = styled(Icon)`
-    margin-left: 8px;
-`;
-
 const iconsMap = {
     java: javaIcon,
     javascript: javascriptIcon,
@@ -92,33 +34,31 @@ const iconsMap = {
 
 const Project = ({ project, index }) => {
     return (
-        <ProjectStyled>
-            <ProjectTitle>
+        <div className={"projectItem"}>
+            <h3 className={"projectName"}>
                 {project.name}
-                <GithubLink href="#">
+                <a href="/#" className={"githubLink"}>
                     <InlineIcon icon={githubIcon} />
-                </GithubLink>
-            </ProjectTitle>
-            <ProjectDescription>{project.description}</ProjectDescription>
-            <ProjectTagsContainer>
-                <div>
-                    {project.tags.map((tag) => (
-                        <ProjectTag href="/#">{tag}</ProjectTag>
+                </a>
+            </h3>
+            <div className={"projectDescription"}>{project.description}</div>
+            <div className={"tagsContainer"}>
+                <div className={"tags"}>
+                    {project.tags.map((tag, index) => (
+                        <div className={"tag"} key={index}>{tag}</div>
                     ))}
                 </div>
-                <div>
+                <div className={"languages"}>
                     {project.langs.map((lang) => (
-                        <a href="/#">
-                            <LanguageIcon
-                                icon={iconsMap[lang.toLowerCase()]}
-                                height={18}
-                            />
-                        </a>
-                        // <ProjectTag href="#">{lang}</ProjectTag>
+                        <Icon
+                            className={"language"}
+                            icon={iconsMap[lang.toLowerCase()]}
+                            height={18}
+                        />
                     ))}
                 </div>
-            </ProjectTagsContainer>
-        </ProjectStyled>
+            </div>
+        </div>
     );
 };
 
