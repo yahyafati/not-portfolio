@@ -1,5 +1,5 @@
 import NavigationItem from "./NavigationItem";
-
+import "../../styles/navigation.css"
 
 const NavigationPanel = () => {
     return (

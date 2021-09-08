@@ -5,7 +5,7 @@ const ParticleStyles = {
     position: "fixed",
     top: 0,
     left: 0,
-    "z-index": -200,
+    "z-index": "-200",
 }
 
 const ParticlesBackground = () => {
@@ -15,7 +15,7 @@ const ParticlesBackground = () => {
             options={{
                 background: {
                     color: {
-                        value: "#ffffff",
+                        value: "#cccccc",
                     },
                 },
                 fpsLimit: 60,
