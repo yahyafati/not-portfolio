@@ -1,17 +1,17 @@
 import React from 'react';
-import styled from "styled-components";
 import Particles from "react-tsparticles";
 
-const ParticleStyled = styled(Particles)`
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -200;
-`;
+const ParticleStyles = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    "z-index": -200,
+}
 
 const ParticlesBackground = () => {
     return (
-        <ParticleStyled
+        <Particles
+            style={ParticleStyles}
             options={{
                 background: {
                     color: {
