@@ -23,8 +23,8 @@ const ToolsGrid = () => {
 
     return (
         <div className={"toolsGrid"}>
-            {tools.map((tool) => (
-                <ToolItem tool={tool} />
+            {tools.map((tool, index) => (
+                <ToolItem tool={tool} key={index} />
             ))}
         </div>
     );

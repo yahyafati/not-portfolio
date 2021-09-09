@@ -46,11 +46,14 @@ const languages = [
 ];
 
 const ProgrammingLanguagesList = () => {
-
     return (
         <div className={"programmingLanguagesList"}>
             {languages.map((language, index) => (
-                <ProgrammingLanguage language={language} index={index} />
+                <ProgrammingLanguage
+                    key={index}
+                    language={language}
+                    index={index}
+                />
             ))}
         </div>
     );

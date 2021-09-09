@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import Particles from "react-tsparticles";
 
 const ParticleStyles = {
     position: "fixed",
     top: 0,
     left: 0,
-    "z-index": "-200",
-}
+    zIndex: "-200",
+};
 
 const ParticlesBackground = () => {
     return (

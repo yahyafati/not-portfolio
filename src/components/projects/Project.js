@@ -44,13 +44,16 @@ const Project = ({ project, index }) => {
             <div className={"projectDescription"}>{project.description}</div>
             <div className={"tagsContainer"}>
                 <div className={"tags"}>
-                    {project.tags.map((tag, index) => (
-                        <div className={"tag"} key={index}>{tag}</div>
+                    {project.tags.map((tag, tagIndex) => (
+                        <div className={"tag"} key={tagIndex}>
+                            {tag}
+                        </div>
                     ))}
                 </div>
                 <div className={"languages"}>
-                    {project.langs.map((lang) => (
+                    {project.langs.map((lang, langIndex) => (
                         <Icon
+                            key={langIndex}
                             className={"language"}
                             icon={iconsMap[lang.toLowerCase()]}
                             height={18}

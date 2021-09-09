@@ -11,24 +11,20 @@ const icons = [
     { icon: instagramIcon, name: "Instagram", url: "https://instagram.com" },
 ];
 
-
 const SocialMediaButtons = () => {
     return (
         <div className={"socials"}>
             {icons.map((icon, index) => {
                 return (
-                    <a href={icon.url}
-                       target="_blank"
-                       rel="noreferrer"
-                       style={{animationDelay: `${index/2}s`}}
-                       className={"socialButton"}
+                    <a
+                        href={icon.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ animationDelay: `${index / 2}s` }}
+                        className={"socialButton"}
+                        key={index}
                     >
-                        <InlineIcon
-
-                            icon={icon.icon}
-                            width={32}
-                            height={32}
-                        />
+                        <InlineIcon icon={icon.icon} width={32} height={32} />
                     </a>
                 );
             })}
